@@ -33,3 +33,25 @@ class Queue
     @front == -1 && @rear == -1
   end
 end
+
+class Stack
+  def initialize
+    @array = []
+    @top = -1
+  end
+
+  def push(value)
+    @top += 1
+    @array[@top] = value
+  end
+
+  def pop
+    temp = @array[@top]
+    @top -= 1
+    temp
+  end
+
+  def first
+    @array[@top]
+  end 
+end
