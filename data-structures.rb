@@ -1,6 +1,4 @@
 class Queue
-  attr_accessor :front, :rear, :array
-
   def initialize
     @array = []
     @front = -1
